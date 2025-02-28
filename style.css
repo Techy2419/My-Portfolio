@@ -1,0 +1,303 @@
+/* Fonts! */
+@font-face {
+  font-family: "CoFo Sans";
+  src: url("fonts/CoFoSans-Regular.woff2") format("woff2"),
+    url("fonts/CoFoSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CoFo Sans";
+  src: url("fonts/CoFoSans-Medium.woff2") format("woff2"),
+    url("fonts/CoFoSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CoFo Sans";
+  src: url("fonts/CoFoSans-Bold.woff2") format("woff2"),
+    url("fonts/CoFoSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FS Me";
+  src: url("fonts/FSMe.woff2") format("woff2"),
+    url("fonts/FSMe.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FS Me";
+  src: url("fonts/FSMe-Light.woff2") format("woff2"),
+    url("fonts/FSMe-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LilGrotesk";
+  src: url("fonts/LilGrotesk-Bold.woff2") format("woff2"),
+    url("fonts/LilGrotesk-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Navbar */
+.navbar-toggler {
+  border: 2px solid #7a41f5;
+  background-color: transparent !important;
+}
+
+.navbar {
+  --bs-navbar-toggler-focus-width: 0.15rem;
+  /* background-color: gray !important; */
+}
+
+/* .scroll-top .navbar {
+  background-color: transparent !important;
+} */
+
+.navbar-brand span {
+  font-family: "CoFo Sans";
+  font-weight: bold;
+  color: #742ff8 !important;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Navbar brand Hover Effect */
+.navbar-brand span:hover {
+  color: #986bf7 !important;
+}
+
+#home-icon {
+  color: #742ff8;
+  transition: color 0.3s ease-in-out;
+}
+
+#home-icon:hover {
+  color: #986bf7 !important;
+}
+
+/* Navbar Link Styling */
+.navbar-nav .nav-link {
+  font-family: "CoFo Sans";
+  font-weight: bold;
+  font-size: 16px;
+  color: #742ff8 !important;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Navbar Link Hover Effect */
+.navbar-nav .nav-link:hover {
+  color: #c8b6ff !important;
+}
+
+/* Active Link (Current Section Highlight) */
+.navbar-nav .nav-link.active {
+  color: #c8b6ff !important; /* Change to hover color */
+}
+
+/* Hero Section */
+section#hero-section {
+  background-image: linear-gradient(
+      rgba(10, 10, 20, 0.4),
+      rgba(10, 10, 20, 0.6)
+    ),
+    url(img/hero.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-fluid {
+  border-radius: 50%;
+  width: 175px;
+  box-shadow: 0 4px 15px rgba(210, 191, 251, 0.5);
+}
+
+.hero-title {
+  color: #6c2cf4;
+  font-family: "CoFo Sans";
+  font-weight: bold;
+  font-size: 40px;
+  text-shadow: 2px 2px 10px rgba(225, 212, 252, 0.6);
+}
+
+.tagline {
+  color: #c8b6ff;
+  font-family: FS Me;
+  font-style: italic;
+  font-size: 18px;
+  text-shadow: 2px 2px 10px rgba(240, 233, 253, 0.5);
+}
+.text-center a {
+  text-decoration: none;
+}
+
+section {
+  padding: 30px 0;
+}
+
+#mission-target,
+#skills-target,
+#contact-target {
+  position: relative;
+  top: -100px;
+}
+
+h2 {
+  text-align: center;
+}
+
+section#mission-section {
+  background-color: #fafafa;
+}
+
+section#skills-section {
+  background-color: #d4d4d4;
+}
+
+section#contact-section {
+  background-color: #fafafa;
+}
+
+/* Mission Section */
+.carousel-inner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.carousel-caption {
+  position: absolute;
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  max-width: 80%;
+}
+
+.carousel-caption h5 {
+  font-family: "FS Me";
+  font-weight: bold;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+  margin-bottom: 8px;
+}
+
+.carousel-caption p {
+  font-family: "FS Me", sans-serif;
+  opacity: 0.9;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+/* Skills Section*/
+.skill-card {
+  font-family: "FS Me";
+  border: none;
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skill-card i {
+  font-size: 50px;
+  color: #742ff8;
+}
+
+.skill-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 4px 4px #e1d4fc;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.mb-4 {
+  font-family: "CoFo Sans";
+  font-weight: bold;
+}
+
+.text-body {
+  font-family: "FS Me";
+}
+
+/* Contact Section */
+.contact-item {
+  font-family: "FS Me";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #742ff8;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.contact-subtext {
+  font-family: "FS Me";
+  font-weight: 500;
+  color: #986bf7;
+  opacity: 0.85;
+  margin-bottom: 20px;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  text-shadow: 1px 1px 8px rgba(156, 121, 255, 0.3); /* Soft glowing effect */
+}
+
+.contact-item i {
+  font-size: 32px;
+  margin-bottom: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contact-item:hover {
+  transform: translateY(-3px) scale(1.1);
+}
+
+.contact-item:hover i {
+  animation: floating 1s ease-in-out infinite alternate;
+}
+
+@keyframes floating {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
